@@ -2,7 +2,7 @@ int sum = 0;
 void setup()
 {
   
-  size(500,550);
+  size(500,510);
   background(0,0,0);
   noLoop();
 }
@@ -18,13 +18,15 @@ void draw()
       joe.roll();
       joe.show();
       
-      //sum = sum;
     }
   }
-  
+
+  textSize(35);
+  text("Sum of Dice: " + sum, 130,490);
 }
 void mousePressed()
 {
+  sum = 0;
   redraw();
 }
 
