@@ -20,9 +20,11 @@ void draw()
       
     }
   }
-
+  fill(255);
+  rect(100,448,300,50,15);
+  fill(0);
   textSize(35);
-  text("Sum of Dice: " + sum, 130,490);
+  text("Sum of Dice: " + sum, 105,485);
 }
 void mousePressed()
 {
